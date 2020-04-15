@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title> 3nen project </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <h1> First experiment </h1>
+    <div id="app">
+      <input type="button" value="plus" @click="plus"></input>
+      <input type="button" value="color" @click="changecolor"></input>
+      <div :style="color">
+	{{message}}
+      </div>
+    </div>
+    <script src="first.js"></script>
+
+  </body>
+</html>
