@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title> 3年プロジェクト2nd</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <h1> 第２回 </h1>
+
+    <div id="app">
+      <input type="button" value="+" @click="plus"></input>
+      <table border=1>
+	<tr v-for="y in items">
+	  <td v-for="c in y">{{c}}</td>
+	</tr>
+      </table>
+    </div>
+    <script src="0422.js"></script>
+  </body>
+
+</html>

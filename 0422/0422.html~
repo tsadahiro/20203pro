@@ -10,9 +10,7 @@
       <input type="button" value="plus" @click="plus"></input>
       <input type="button" value="color" @click="changecolor"></input>
       <div :style="color">
-	<div v-for="message in messages">
-	  {{message}}
-	</div>
+	{{message}}
       </div>
     </div>
     <script src="first.js"></script>

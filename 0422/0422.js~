@@ -1,7 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-	messages: ['ABC','EFG', 'HIJ'],
+	message: 'ABC',
 	color: 'color:black;' //黒
     },
     methods:{
