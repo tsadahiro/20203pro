@@ -9,6 +9,7 @@
 
     <div id="app">
       <input type="button" value="+" @click="plus"></input>
+      <input type="button" value="-" @click="minus"></input>
       <table border=1>
 	<tr v-for="y in items">
 	  <td v-for="c in y">{{c}}</td>

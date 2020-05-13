@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>3年プロジェクト　3rd</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  
+  <body>
+    <h1>第3回</h1>
+    
+    <div id="app">
+      <svg width="400" height="400">
+	<circle v-for="(p,i) in pieces"
+		:cx="100*p.x+50"
+		:cy="100*p.y+50" r="50" fill="red"
+		:fill-opacity="i==0? 0 : 0.5"
+		@click="swap(i)"
+		>
+	</circle>
+	<text v-for="(p,i) in pieces"
+	      :x="100*p.x+50"
+	      :y="100*p.y+50" stroke="black" font-size="30">
+	  {{i}}
+	</text>
+      </svg>
+    </div>
+    <script src="third.js"></script>
+  </body>
+</html>
