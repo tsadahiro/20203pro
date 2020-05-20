@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title> 3年プロジェクト3nd </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <h1> 第3回 </h1>
+    
+    <div id="app">
+      <input type="button" value="shuffle"
+	     @click="shuffle()"></input>
+      <svg width="500" height="500">
+	<g v-for="(p,i) in pieces" :transform="translate(p)"@click="swap(i)" >
+	  <rect 
+		:x="10"	:y="10" width="100" height="100" fill="cornflowerblue" stroke="white"
+		:fill-opacity="i==0? 0: 0.5"
+	      >
+	  </rect>
+	  <text :x="59"	:y="69"
+		fill="coral" font-size="30" text-anchor="middle">
+	    {{textprint(i)}}
+	  </text>
+	</g>
+	
+	<piece v-for="(p,i) in pieces"
+	       :row="p.y" :column="p.x"></piece>
+	
+      </svg>
+    </div>
+    <script src="third.js"></script>
+    
+  </body>
+
+</html>
