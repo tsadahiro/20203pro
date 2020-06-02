@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title> group </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <svg width="400" height="400">
+	<circbtn v-for="(p,i) in pieces" @slide="swap(i)"
+		 :row="p.y" :col="p.x" :digit="i"></circbtn>
+      </svg>
+    </div>
+    <script src="0527.js"></script>
+  </body>
+</html>
